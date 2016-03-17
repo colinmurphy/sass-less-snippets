@@ -1,0 +1,16 @@
+.img-preload {
+    .fa {
+        @extend .absolute;
+        left: 0;
+        top: 40%;
+        width: 100%;
+        color: $brand-primary;
+        font-size: 32px;
+        }
+    }
+
+.img-preload.img-loaded {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }

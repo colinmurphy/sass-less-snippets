@@ -1,0 +1,9 @@
+$white: #fff;
+$black: #000;
+$gray: #aaa;
+
+$colors: (white : $white, black : $black, gray : $gray);
+@each $color, $value in $colors {
+    @include background($color, $value);
+    @include color($color, $value);
+    }

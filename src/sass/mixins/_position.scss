@@ -1,0 +1,22 @@
+// =============================================
+// Position
+// =============================================
+@mixin relative($z-index: 1) {
+    position: relative;
+    z-index: $z-index;
+    }
+
+@mixin absolute($z-index: 1) {
+    position: absolute;
+    z-index: $z-index;
+    }
+
+@mixin static($z-index: 1) {
+    position: static;
+    z-index: $z-index;
+    }
+
+@mixin fixed($z-index: 1) {
+    position: fixed;
+    z-index: $z-index;
+    }

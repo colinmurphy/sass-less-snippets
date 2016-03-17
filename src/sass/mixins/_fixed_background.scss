@@ -1,0 +1,33 @@
+@mixin fixed-background($height) {
+
+    .fixed-background-#{$height} {
+        overflow: hidden;
+        height: $height + px;
+        @extend .relative;
+        img {
+            @extend .absolute;
+            z-index: 0;
+            left: 0;
+            top: 0;
+            min-height: 100%;
+            min-width: 100%;
+            }
+        }
+
+    @media screen and (max-width: $screen-md-max) {
+        .fixed-background-md-#{$height} {
+            height: $height + px !important;
+            }
+        }
+    @media screen and (max-width: $screen-sm-max) {
+        .fixed-background-sm-#{$height} {
+            height: $height + px !important;
+            }
+        }
+    @media screen and (max-width: $screen-xs-max) {
+        .fixed-background-xs-#{$height} {
+            height: $height + px !important;
+            }
+        }
+
+    }

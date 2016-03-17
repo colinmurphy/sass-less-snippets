@@ -1,0 +1,4 @@
+$_fixed_backgrounds: 180, 220, 240, 360, 400, 480;
+@each $_fixed_height in $_fixed_backgrounds {
+    @include fixed-background($_fixed_height);
+    }

@@ -1,0 +1,31 @@
+// =============================================
+// Create Grids for Bootstrap
+// =============================================
+// Move these to variables to your variables file
+$screen-xxs: 599px;
+$screen-xxxs: 479px;
+$screen-xxxxs: 399px;
+
+@media screen and (max-width: $screen-xxs) {
+    @for $i from (1 + 1) through 12 {
+        .col-xxs-#{$i} {
+            @include make-xs-column($i);
+            }
+        }
+    }
+
+@media screen and (max-width: $screen-xxxs) {
+    @for $i from (1 + 1) through 12 {
+        .col-xxxs-#{$i} {
+            @include make-xs-column($i);
+            }
+        }
+    }
+
+@media screen and (max-width: $screen-xxxxs) {
+    @for $i from (1 + 1) through 12 {
+        .col-xxxxs-#{$i} {
+            @include make-xs-column($i);
+            }
+        }
+    }

@@ -1,0 +1,22 @@
+// =============================================
+// Background and Colors
+// =============================================
+@mixin background($color, $value) {
+    .bg-#{$color} {
+        background: $value;
+        }
+    }
+@mixin color($color, $value) {
+    .color-#{$color} {
+        color: $value;
+        }
+
+    .color-hover-#{$color} {
+        &:hover,
+        &:active,
+        &:focus {
+            color: $value;
+            }
+        }
+
+    }

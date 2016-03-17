@@ -1,0 +1,15 @@
+.relative {
+    @include relative();
+    }
+
+.absolute {
+    @include absolute();
+    }
+
+.static {
+    @include static();
+    }
+
+.fixed {
+    @include fixed();
+    }
